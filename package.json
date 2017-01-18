@@ -4,8 +4,8 @@
   "description": "My personal webpack base config for future projects",
   "main": "index.js",
   "scripts": {
-      "build": "NODE_ENV=production webpack --config webpack.config.js",
-      "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js"
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "@webpack-blocks/sass": "^0.3.0",
     "@webpack-blocks/webpack2": "^0.4.0-rc.2",
     "autoprefixer": "^6.6.1",
+    "html-webpack-plugin": "^2.26.0",
     "webpack": "^2.2.0-rc.7",
     "webpack-dev-server": "^2.2.0-rc.0"
   }
