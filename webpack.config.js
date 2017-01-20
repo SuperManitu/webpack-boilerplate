@@ -3,15 +3,17 @@ const babel = require('@webpack-blocks/babel6');
 const devServer = require('@webpack-blocks/dev-server2');
 const postcss = require('@webpack-blocks/postcss');
 const sass = require('@webpack-blocks/sass');
+const typescript = require('@webpack-blocks/typescript');
 const autoprefixer = require('autoprefixer');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = createConfig([
-    entryPoint('./src/index.js'),
+    entryPoint('./src/index.ts'),
     entryPoint('./src/styles.scss'),
     setOutput('./build/bundle.js'),
     babel(),
+    typescript(),
     postcss([
         autoprefixer({ browsers: ['last 2 versions'] })
     ]),
